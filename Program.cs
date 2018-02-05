@@ -10,8 +10,7 @@ namespace ConsoleApp3
     {
         static void Main(string[] args)
         {
-            Gold newmember;
-            newmember = new Gold();
+            
             string choice;
             DisplayMenu();
             choice = Console.ReadLine();
@@ -53,12 +52,17 @@ namespace ConsoleApp3
         }
         static void Guest()
         {
+            Regular newmember;
+            newmember = new Regular();
             Console.Clear();
             Console.WriteLine("Enter your name:");
-
+            newmember.name = Console.ReadLine();
             Console.WriteLine("Enter your address:");
+            newmember.address = Console.ReadLine();
             Console.WriteLine("Enter your telephone number:");
+            newmember.telephone = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Enter your Payment method:");
+            newmember.paymentM = Console.ReadLine();
         }
 
         static void Gold()

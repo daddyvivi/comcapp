@@ -13,5 +13,5 @@ using System.Threading.Tasks;
     public string PaymentM;
     public string Gender;
     public double AnnualFee;
-    public double discount;
+    public double 
 }
